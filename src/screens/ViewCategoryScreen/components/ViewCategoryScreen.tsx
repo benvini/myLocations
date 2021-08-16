@@ -8,18 +8,13 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { Screen, Typography } from "../../../shared/components";
 import { MainScreen } from "../../../shared/components/MainScreen";
-import {
-  CategoriesState,
-  Location,
-  ViewCategoryParams,
-} from "../../../types/types";
+import { Location, ViewCategoryParams } from "../../../types/types";
 import LocationItem from "../../../shared/components/LocationItem";
 import CustomToolbar from "../../../shared/components/CustomToolbar";
-import {
-  removeHighlightCategory,
-  setLocations,
-} from "../../../store/actions/categories";
+import { removeHighlightCategory } from "../../../store/actions/categories";
 import { getLocationsByCategory } from "../../../shared/utils/utils";
+import { setLocations } from "../../../store/actions/locations";
+import { AppState } from "../../../store/reducers";
 
 const BoldTypography = styled(Typography)`
   font-weight: bold;
@@ -40,7 +35,7 @@ const ViewCategoryScreen = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const { category_name } = useParams<ViewCategoryParams>();
-  const locations = useSelector((state: CategoriesState) => state.locations);
+  const locations = useSelector((state: AppState) => state.locations.locations);
 
   useEffect(() => {
     const updatedLocations = getLocationsByCategory(category_name);

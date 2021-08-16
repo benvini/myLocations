@@ -9,7 +9,6 @@ import { getItem } from "../../../shared/utils/localstorage";
 import { styles } from "../styles/styles";
 import { Screen, Typography, MainButton } from "../../../shared/components";
 import CategoryItem from "../../../shared/components/CategoryItem";
-import { CategoriesState } from "../../../types/types";
 import COLOR from "../../../styles/Color";
 import { MainScreen } from "../../../shared/components/MainScreen";
 import CustomToolbar from "../../../shared/components/CustomToolbar";
@@ -23,6 +22,8 @@ import {
   removeCategoryInStorage,
   removeCategoryLocationsInStorage,
 } from "../../../shared/utils/utils";
+import { AppState } from "../../../store/reducers";
+import { Category } from "../../../types/types";
 
 const AddCategoryButton = styled(MainButton)`
   margin-left: auto;
@@ -66,9 +67,11 @@ const CategoriesScreen = () => {
   const [showSnackbar, setShowSnackbar] = useState(false);
   const history = useHistory();
   const dispatch = useDispatch();
-  const categories = useSelector((state: CategoriesState) => state.categories);
+  const categories = useSelector(
+    (state: AppState) => state.categories.categories
+  );
   const highlightedCategory = useSelector(
-    (state: CategoriesState) => state.highlightedCategory
+    (state: AppState) => state.categories.highlightedCategory
   );
 
   useEffect(() => {
@@ -134,15 +137,17 @@ const CategoriesScreen = () => {
         )}
       </CustomToolbar>
       <MainScreen>
-        {categories.length > 0 && (
+        {categories.length > 0 ? (
           <List style={styles.list}>
-            {categories.map((category, index) => (
+            {categories.map((category: Category, index: number) => (
               <StyledCategory
                 key={`${category.name} ${index}`}
                 name={category.name}
               />
             ))}
           </List>
+        ) : (
+          <Typography>{t("noDataToShow")}</Typography>
         )}
         {showSnackbar && (
           <CustomSnackbar show={showSnackbar} closeHandler={closeSnackbar}>

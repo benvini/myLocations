@@ -6,7 +6,8 @@
     "viewCategory": "VIEW CATEGORY",
     "deleteCategory": "DELETE CATEGORY",
     "addLocation": "ADD LOCATION",
-    "categoryDeleted": "Category successfully deleted"
+    "categoryDeleted": "Category successfully deleted",
+    "noDataToShow": "No data to show."
   },
   "addCategoryScreen": {
     "addCategory": "Add Category",

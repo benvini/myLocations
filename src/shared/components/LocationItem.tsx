@@ -8,8 +8,8 @@ import { Delete } from "@material-ui/icons";
 import COLOR from "../../styles/Color";
 import { Location } from "../../types/types";
 import { getItem } from "../utils/localstorage";
-import { setLocations } from "../../store/actions/categories";
 import { deleteLocationInStorage } from "../utils/utils";
+import { setLocations } from "../../store/actions/locations";
 
 type Props = {
   location: Location;

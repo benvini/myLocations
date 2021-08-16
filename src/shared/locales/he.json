@@ -6,7 +6,8 @@
     "viewCategory": "צפה בקטגוריה",
     "deleteCategory": "מחק קטגוריה",
     "addLocation": "הוסף מיקום",
-    "categoryDeleted": "קטגוריה נמחקה."
+    "categoryDeleted": "קטגוריה נמחקה.",
+    "noDataToShow": "אין מידע להציג."
   },
   "addCategoryScreen": {
     "addCategory": "הוסף קטגוריה",

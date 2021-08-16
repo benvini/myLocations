@@ -1,10 +1,9 @@
-import { Category, Location } from "../../types/types";
+import { Category } from "../../types/types";
 import {
   SET_HIGHLIGHTED_CATEGORY,
   REMOVE_HIGHLIGHTED_CATEGORY,
   SET_CATEGORIES,
   DELETE_CATEGORY,
-  SET_LOCATIONS,
 } from "./actionTypes";
 
 export const setHighlightCategory = (categoryName: string) => {
@@ -31,12 +30,5 @@ export const deleteCategory = (category: string) => {
   return {
     type: DELETE_CATEGORY,
     category,
-  };
-};
-
-export const setLocations = (locations: Location[]) => {
-  return {
-    type: SET_LOCATIONS,
-    locations,
   };
 };

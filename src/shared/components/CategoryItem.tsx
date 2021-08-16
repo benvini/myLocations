@@ -9,7 +9,7 @@ import {
   setHighlightCategory,
   removeHighlightCategory,
 } from "../../store/actions/categories";
-import { CategoriesState } from "../../types/types";
+import { AppState } from "../../store/reducers";
 
 type Props = {
   name: string;
@@ -25,7 +25,7 @@ const CategoryItem = ({ name, className }: Props) => {
   const dispatch = useDispatch();
   const [expanded, setExpanded] = useState(false);
   const highlightedCategory = useSelector(
-    (state: CategoriesState) => state.highlightedCategory
+    (state: AppState) => state.categories.highlightedCategory
   );
 
   useEffect(() => {

@@ -19,6 +19,9 @@ export type Location = {
 export type CategoriesState = {
   highlightedCategory: string;
   categories: Category[];
+};
+
+export type LocationsState = {
   locations: Location[];
 };
 

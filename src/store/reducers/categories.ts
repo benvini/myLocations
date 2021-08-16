@@ -5,7 +5,6 @@ import * as actionTypes from "../actions/actionTypes";
 const initialState = {
   highlightedCategory: "",
   categories: [],
-  locations: [],
 };
 
 const CategoriesReducer = (
@@ -21,8 +20,6 @@ const CategoriesReducer = (
       return setCategories(state, action);
     case actionTypes.DELETE_CATEGORY:
       return deleteCategory(state, action);
-    case actionTypes.SET_LOCATIONS:
-      return setLocations(state, action);
     default:
       return state;
   }
@@ -55,13 +52,6 @@ const deleteCategory = (state: CategoriesState, action: AnyAction) => {
     categories: state.categories.filter(
       (category: Category) => category.name !== action.category
     ),
-  };
-};
-
-const setLocations = (state: CategoriesState, action: AnyAction) => {
-  return {
-    ...state,
-    locations: action.locations,
   };
 };
 
