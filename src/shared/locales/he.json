@@ -1,0 +1,53 @@
+{
+  "categoriesScreen": {
+    "categories": "קטגוריות",
+    "addCategory": "הוסף קטגוריה",
+    "editCategory": "ערוך קטגוריה",
+    "viewCategory": "צפה בקטגוריה",
+    "deleteCategory": "מחק קטגוריה",
+    "addLocation": "הוסף מיקום",
+    "categoryDeleted": "קטגוריה נמחקה."
+  },
+  "addCategoryScreen": {
+    "addCategory": "הוסף קטגוריה",
+    "add": "הוסף",
+    "reset": "אפס",
+    "name": "שם",
+    "categoryExists": "הקטגוריה כבר קיימת.",
+    "categoryAdded": "הקטגוריה הוספה בהצלחה."
+  },
+  "editCategoryScreen": {
+    "editCategory": "ערוך קטגוריה",
+    "save": "שמור",
+    "reset": "אפס",
+    "category": "קטגוריה",
+    "categoryChanged": "קטגוריה עודכנה בהצלחה."
+  },
+  "viewCategoryScreen": {
+    "viewCategory": "צפייה בקטגוריה",
+    "locationsInCategory": "{{category}}מיקומים ב",
+    "noDataAvailable": "אין מידע להציג."
+  },
+  "locationItem": {
+    "name": "שם",
+    "address": "כתובת",
+    "category": "קטגוריה",
+    "coordinates": "קואורדינטות",
+    "lat": "קו רוחב",
+    "lng": "קו אורך",
+    "noDataAvailable": "אין מידע להציג."
+  },
+  "addLocationScreen": {
+    "addLocation": "הוסף מיקום",
+    "addLocationInCategory": "{{category}}הוסף מיקום ב",
+    "save": "שמור",
+    "reset": "אפס",
+    "locationUpdated": "מיקום עודכן.",
+    "locationAdded": "מיקום התווסף.",
+    "name": "שם",
+    "address": "כתובת",
+    "category": "קטגוריה",
+    "latitude": "קו רוחב",
+    "longitude": "קו אורך"
+  }
+}

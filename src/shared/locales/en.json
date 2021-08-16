@@ -1,0 +1,53 @@
+{
+  "categoriesScreen": {
+    "categories": "Categories",
+    "addCategory": "ADD CATEGORY",
+    "editCategory": "EDIT CATEGORY",
+    "viewCategory": "VIEW CATEGORY",
+    "deleteCategory": "DELETE CATEGORY",
+    "addLocation": "ADD LOCATION",
+    "categoryDeleted": "Category successfully deleted"
+  },
+  "addCategoryScreen": {
+    "addCategory": "Add Category",
+    "add": "ADD",
+    "reset": "RESET",
+    "name": "Name",
+    "categoryExists": "Category already exists.",
+    "categoryAdded": "Category added successfully."
+  },
+  "editCategoryScreen": {
+    "editCategory": "Edit Category",
+    "save": "SAVE",
+    "reset": "RESET",
+    "category": "Category",
+    "categoryChanged": "Category changed successfully."
+  },
+  "viewCategoryScreen": {
+    "viewCategory": "View Category",
+    "locationsInCategory": "Locations in {{category}}",
+    "noDataAvailable": "No data to show."
+  },
+  "locationItem": {
+    "name": "Name",
+    "address": "Address",
+    "category": "Category",
+    "coordinates": "Coordinates",
+    "lat": "Latitude",
+    "lng": "Longitude",
+    "noDataAvailable": "No data to show."
+  },
+  "addLocationScreen": {
+    "addLocation": "Add Location",
+    "addLocationInCategory": "Add location in {{category}}",
+    "save": "SAVE",
+    "reset": "RESET",
+    "locationUpdated": "Location Updated.",
+    "locationAdded": "Location Added.",
+    "name": "Name",
+    "address": "Address",
+    "category": "Category",
+    "latitude": "Latitude",
+    "longitude": "Longitude"
+  }
+}
